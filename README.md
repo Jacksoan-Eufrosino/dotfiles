@@ -11,6 +11,7 @@ Navegue até a pasta que contém as subpastas dos dotfiles (ex: `dotfiles/`):
 ```bash
 cd dotfiles
 stow *
+```
 
 
 ### 2. Remover um symlink
@@ -21,3 +22,5 @@ Navegue até a pasta que contém as subpastas dos dotfiles (ex: `dotfiles/`):
 ```bash
 cd dotfiles
 stow -D zsh
+```
+
