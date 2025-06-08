@@ -4,20 +4,15 @@ Cada subpasta é chamada de **pacote** pelo Stow, e deve conter os arquivos com 
 
 ## ⚙️ Como usar
 
-### 1. Instalar os dotfiles (symlinks)
-
-Navegue até a pasta que contém as subpastas dos dotfiles (ex: `dotfiles/`):
-
 ```bash
+git clone https://github.com/Jacksoan-Eufrosino/dotfiles.git
 cd dotfiles
-stow *
+./setup_new.sh
 ```
 
-
-### 2. Remover um symlink
+##  Remover um symlink
 
 Navegue até a pasta que contém as subpastas dos dotfiles (ex: `dotfiles/`):
-
 
 ```bash
 cd dotfiles
