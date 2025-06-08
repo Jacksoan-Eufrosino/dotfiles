@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Instalar pacotes essenciais
-sudo apt update && sudo apt install -y zsh fzf git curl stow xclip bat
+sudo apt update && sudo apt install -y zsh fzf vim curl stow xclip bat
 
 # Garantir que o Zsh esteja nos shells válidos
 ZSH_PATH=$(which zsh)
@@ -26,5 +26,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting "$ZSH_CUSTOM/plug
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
+rm -rf ~/.zshrc 
+stow tmux vim zsh
 echo "✅ Script concluído. Reinicie o terminal para que o Zsh seja ativado como shell padrão."
 
