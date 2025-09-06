@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Instalar pacotes essenciais
-sudo apt update && sudo apt install -y zsh fzf vim curl stow xclip bat grc colorize
+sudo apt update && sudo apt install -y zsh fzf vim curl stow xclip bat grc colorize fd-find
 
 # Garantir que o Zsh esteja nos shells válidos
 ZSH_PATH=$(which zsh)
