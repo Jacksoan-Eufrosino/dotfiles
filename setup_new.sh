@@ -27,8 +27,11 @@ git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 # Instalar nerdfont para os icones. Devemos selecionar a font Hack nerd fonts mono nas preferencias
-sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip -O /usr/share/fonts/Hack.zip
-sudo unzip /usr/share/fonts/Hack.zip
+cd /tmp
+sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip
+sudo unzip Hack.zip -d /usr/share/fonts/Hack
+sudo fc-cache -fv
+
 
 # Instalar o eza
 sudo mkdir -p /etc/apt/keyrings
