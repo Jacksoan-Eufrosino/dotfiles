@@ -32,6 +32,8 @@ sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.
 sudo unzip Hack.zip -d /usr/share/fonts/Hack
 sudo fc-cache -fv
 
+#Instalacao do uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Instalar o eza
 sudo mkdir -p /etc/apt/keyrings
